@@ -1,0 +1,21 @@
+{% extends "admin/layout/header.html" %}
+
+{% block content %}
+
+<h1>Login Page</h1>
+<form action="login/check-login" method="post">
+    
+    <label>Email ID: </label>
+    <input type="email" name="email" value="" required>
+
+    <br><br>
+
+    <label>Password: </label>
+    <input type="password" name="password" value="" required>
+
+    <br><br>
+
+    <button>Submit</button>
+</form>
+
+{% endblock %}
